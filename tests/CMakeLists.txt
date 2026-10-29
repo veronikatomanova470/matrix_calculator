@@ -1,0 +1,5 @@
+find_package(GTest REQUIRED)
+add_executable(matrix_tests test_matrix.cpp ../src/matrix.cpp)
+target_include_directories(matrix_tests PRIVATE ${CMAKE_SOURCE_DIR}/include ${GTEST_INCLUDE_DIRS})
+target_link_libraries(matrix_tests GTest::gtest GTest::gtest_main)
+add_test(NAME matrix_tests COMMAND matrix_tests)
