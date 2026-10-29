@@ -1,3 +1,0 @@
-matrix_tests 0 0
----
-matrix_tests
